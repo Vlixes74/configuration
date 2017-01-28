@@ -1,0 +1,48 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:3015/eureka
+
+checkbook:
+  before:
+    first:
+      moves: 
+        id: 10110
+        option: 41
+    second:
+      moves:
+        id: 10111
+        option: 43
+  after:
+    first:
+      moves: 
+        id: 10120
+        option: 42
+    second:
+      moves:
+        id: 10121
+        option: 43
+
+master:
+  before:
+    first:
+      moves: 
+        id: 10610
+        option: 41
+    second:
+      moves:
+        id: 10611
+        option: 43
+  after:
+    first:
+      moves: 
+        id: 10620
+        option: 42
+    second:
+      moves:
+        id: 10621
+        option: 43
